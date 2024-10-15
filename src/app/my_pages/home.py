@@ -14,10 +14,14 @@ def get_practice_data():
         return_value['total_practice_times'] = data[0]['total_practice_times']
         return_value['total_task1_practice_times'] = data[0]['total_task1_practice_times']
         return_value['total_task2_practice_times'] = data[0]['total_task2_practice_times']
+        return_value['all_task1_practice_scores'] = data[0]['all_task1_practice_scores'] # list of scores
+        return_value['all_task2_practice_scores'] = data[0]['all_task2_practice_scores'] # list of scores
     else:
         return_value['total_practice_times'] = 0
         return_value['total_task1_practice_times'] = 0
         return_value['total_task2_practice_times'] = 0
+        return_value['all_task1_practice_scores'] = []
+        return_value['all_task2_practice_scores'] = []
 
     return return_value
 
@@ -36,3 +40,23 @@ def home():
         st.metric("Total Task 1 Practice Times", practice_data['total_task1_practice_times'])
     with col3:
         st.metric("Total Task 2 Practice Times", practice_data['total_task2_practice_times'])
+
+    # plot the scores (line chart)
+    if practice_data['all_task1_practice_scores'] and practice_data['all_task2_practice_scores']:
+        df = pd.DataFrame({
+            'Task 1': practice_data['all_task1_practice_scores'],
+            'Task 2': practice_data['all_task2_practice_scores']
+        })
+        fig = px.line(df)
+        st.plotly_chart(fig)
+    else:
+        st.write("Please practice first to see the scores")
+
+    # show quick links
+    col_link1, col_link2 = st.columns(2)
+    with col_link1:
+        st.write("Go to Practice")
+        st.markdown("[Practice](/practice)")
+    with col_link2:
+        st.write("Go to History")
+        st.markdown("[History](/history)")
