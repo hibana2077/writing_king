@@ -8,7 +8,7 @@ db_client = pymongo.MongoClient(os.getenv("MONGO_URL"))
 
 def get_practice_data():
     collection = db_client['writing_king']['practice_stats']
-    data = collection.find() # only one document
+    data = list(collection.find()) # convert cursor to list
     return_value = {}
     if data:
         return_value['total_practice_times'] = data[0]['total_practice_times']
