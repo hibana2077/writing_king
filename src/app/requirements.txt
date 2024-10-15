@@ -9,3 +9,4 @@ pymongo
 plotly
 pandas
 requests
+streamlit
