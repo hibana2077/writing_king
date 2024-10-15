@@ -29,6 +29,23 @@
 - **Python**: Core programming language used for backend services and integration with LLMs.
 - **Docker**: Ensures a smooth deployment process across different environments.
 
+## Roadmap
+
+- **Enhanced Scoring Accuracy**
+  - Improve the feedback and scoring system to align closely with IELTS standards by refining the language model.
+
+- **Multi-Dimensional Analysis**
+  - Introduce detailed performance metrics across various aspects like grammar, coherence, and lexical resource to provide deeper insights.
+
+- **Growth Tracking and Progress Visualization**
+  - Implement a dashboard that visualizes writing performance trends over time, helping users see their improvements clearly.
+
+- **Expanded Topic Categories**
+  - Continuously update and diversify the range of writing prompts to keep the practice engaging and relevant.
+
+- **User-Customized Writing Goals**
+  - Enable users to set and track personalized writing goals, focusing on specific skills or target scores.
+
 ## Installation
 
 To get started with Writing King locally, follow these steps:
