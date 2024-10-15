@@ -8,11 +8,10 @@ from my_pages.home import home
 
 pages = {
     "Home":[
-        st.Page("Home", home, icon=":material/home")
+        st.Page(home, title="Home", icon=":material/home")
     ],
 
 }
 
-if __name__ == "__main__":
-    pg = st.navigation(pages)
-    pg.run()
+pg = st.navigation(pages)
+pg.run()

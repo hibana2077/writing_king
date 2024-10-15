@@ -16,4 +16,4 @@ COPY . /app
 
 EXPOSE 3000
 
-CMD ["streamlit", "run", "main.py", "--server.port", "3000", "--server.enableCORS", "true"]
+CMD ["streamlit", "run", "main.py", "--server.port", "3000", "--server.enableCORS", "false"]

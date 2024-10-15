@@ -1,8 +1,8 @@
 services:
   app:
     build:
-      context: .
-      dockerfile: ./app/Dockerfile
+      context: ./web
+      dockerfile: Dockerfile
     restart: always
     environment:
       - API_KEY=gsk-123123123
@@ -11,6 +11,8 @@ services:
       - "3000:3000"
     networks:
       - app-network
+    dns:
+      - "8.8.8.8"
 
   mongo:
     image: mongo:latest
