@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile
     restart: always
     environment:
-      - API_KEY=gsk-123123123
+      - API_KEY=YOUR_API_KEY
       - MONGO_URL=mongodb://mongo:27017
     ports:
       - "8080:8080"
