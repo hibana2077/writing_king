@@ -1,0 +1,8 @@
+langchain
+langchainhub
+langchain-community
+langchain-openai
+langchain-groq
+langchain_mistralai
+
+pymongo
