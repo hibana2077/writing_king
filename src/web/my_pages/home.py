@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.express as px
 import os
 
-db_client = pymongo.MongoClient(os.getenv("MONGO_URI"))
+db_client = pymongo.MongoClient(os.getenv("MONGO_URL"))
 
 def get_practice_data():
     collection = db_client['writing_king']['practice_stats']

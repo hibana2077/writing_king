@@ -8,7 +8,7 @@ from my_pages.home import home
 
 pages = {
     "Home":[
-        st.Page(home, title="Home", icon=":material/home")
+        st.Page(home, title="Home", icon="🏠"),
     ],
 
 }
