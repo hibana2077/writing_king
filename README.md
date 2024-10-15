@@ -69,7 +69,7 @@ To get started with Writing King locally, follow these steps:
       - API_KEY=YOUR_GROQ_API_KEY
     ```
 
-If you don't have an API key, you can get one by signing up at [GROQ](https://console.groq.com/keys) It's free!
+    > If you don't have an API key, you can get one by signing up at [GROQ](https://console.groq.com/keys) It's free!
 
 4. Build and start the app using Docker:
 
