@@ -6,3 +6,6 @@ langchain-groq
 langchain_mistralai
 
 pymongo
+plotly
+pandas
+requests
