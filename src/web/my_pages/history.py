@@ -23,7 +23,6 @@ def show_details(practice_data):
         st.write(f"Task 1 Lexical Resource: {practice_data['task1_data']['Lexical Resource']}")
         st.write(f"Task 1 Grammatical Range and Accuracy: {practice_data['task1_data']['Grammatical Range and Accuracy']}")
         st.write(f"Task 1 Task Achievement: {practice_data['task1_data']['Task Achievement']}")
-        # st.write(f"Task 1 Feedback: {practice_data['task1_data']['Feedback']}")
         for key in practice_data['task1_data']['Feedback']:
             st.write(f"{key}: {practice_data['task1_data']['Feedback'][key]}")
     with tab_task2:
@@ -35,7 +34,6 @@ def show_details(practice_data):
         st.write(f"Task 2 Lexical Resource: {practice_data['task2_data']['Lexical Resource']}")
         st.write(f"Task 2 Grammatical Range and Accuracy: {practice_data['task2_data']['Grammatical Range and Accuracy']}")
         st.write(f"Task 2 Task Achievement: {practice_data['task2_data']['Task Achievement']}")
-        # st.write(f"Task 2 Feedback: {practice_data['task2_data']['Feedback']}")
         for key in practice_data['task2_data']['Feedback']:
             st.write(f"{key}: {practice_data['task2_data']['Feedback'][key]}")
 
