@@ -103,4 +103,4 @@ We welcome contributions to improve Writing King! Please fork the repository, cr
 
 ## License
 
-Writing King is licensed under the MIT License.
+Writing King is licensed under the [MIT License](./LICENSE).
