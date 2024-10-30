@@ -28,7 +28,7 @@ def get_practice_data():
 
 def home():
     st.title("Home")
-    st.write("Welcome to my app!")
+    st.write("Welcome to Writing King! This app is designed to help you practice for the IELTS Writing test. You can practice writing essays on various topics and get feedback on your writing. Use the links below to navigate to different sections of the app.")
 
     practice_data = get_practice_data()
 
