@@ -48,7 +48,7 @@ def history():
     if practice_data:
         for it,data in enumerate(practice_data):
             with st.container(border=True):
-                st.write(f"Datetime: {data['date'][:-7]}")
+                st.write(f"Datetime: {str(data['date'])[:-7]}")
                 st.write(f"Overall Score: {data['overall_score']}")
                 # button to see the details
                 if st.button("Show Details", key=f"show_details_{it}"):
